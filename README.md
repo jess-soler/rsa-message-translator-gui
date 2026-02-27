@@ -5,21 +5,20 @@ This project is a Python application with a simple graphical interface that help
 
 The application uses the following fixed RSA parameters:
 
-- Prime numbers:  
-  - \( p = 3 \)  
-  - \( q = 11 \)
-- Modulus:  
-  - \( n = pq = 33 \)
-- Euler’s totient:  
-  - \( \varphi(n) = 20 \)
+- Prime numbers:
+  - p = 3
+  - q = 11
+- Modulus:
+  - n = p × q = 33
+- Euler’s totient:
+  - φ(n) = 20
 
 ### Public Key
-- The public exponent \( e \) is selected from a dropdown of valid values such that  
-  \( \gcd(e, \varphi(n)) = 1 \)
+- The public exponent e is selected from a dropdown of valid values such that gcd(e, φ(n)) = 1
 
 ### Private Key
-- The private exponent \( d \) is computed automatically using the modular inverse:
-  \[ed \equiv 1 \pmod{20}\]
+- The private exponent d is computed automatically using the modular inverse:
+  - e × d ≡ 1 (mod 20)
 
 ## Encoding Scheme
 
